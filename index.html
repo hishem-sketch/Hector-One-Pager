@@ -8,59 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700;800&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS for immediate runtime styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              hector: {
-                primary: '#DE4A00',
-                dark: '#B83D00',
-                light: '#FF6B2C',
-                black: '#1A1A1A',
-                warm: '#FDF8F5',
-                gray: '#6B7280',
-              }
-            },
-            fontFamily: {
-              display: ['"Red Hat Display"', 'sans-serif'],
-              body: ['"Red Hat Text"', 'sans-serif'],
-            }
-          },
-        }
-      }
-    </script>
-    <style type="text/tailwindcss">
-      @layer base {
-        html {
-          scroll-behavior: smooth;
-        }
-        body {
-          font-family: 'Red Hat Text', sans-serif;
-          color: #1A1A1A;
-        }
-        h1, h2, h3, h4, h5, h6 {
-          font-family: 'Red Hat Display', sans-serif;
-        }
-      }
-    </style>
-
-    <script type="importmap">
-    {
-      "imports": {
-        "vite": "https://esm.sh/vite@^7.2.7",
-        "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-        "react/": "https://esm.sh/react@^19.2.1/",
-        "react": "https://esm.sh/react@^19.2.1",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
-      }
-    }
-    </script>
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
