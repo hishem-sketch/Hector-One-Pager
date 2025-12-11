@@ -18,8 +18,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Use standard vite client types */
+    "types": ["vite/client"]
   },
   "include": ["."],
-  "exclude": [""]
+  "exclude": ["node_modules"]
 }
